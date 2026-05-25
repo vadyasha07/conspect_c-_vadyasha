@@ -5,4 +5,4 @@ static or anonymous namespace — hides a function/variable within the file (Int
 
 extern — indicates that the variable is defined in another file. Do not initialize it in main.cpp using parentheses!
 
-inline constexpr — global constants in .h files (Best Practice).
+inline (constexpr) — global constants in .h files (Best Practice).
