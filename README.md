@@ -16,3 +16,8 @@ inline (constexpr) — global constants in .h files (Best Practice). - We tell t
 Const static local variables are generally okay to use.
 
 Non-const static local variables should generally be avoided. If you do use them, ensure the variable never needs to be reset, and isn’t used to alter program flow.
+
+**Best practice for a using-directives**
+Prefer explicit namespace qualifiers over using-statements.
+
+Avoid using-directives altogether (except using namespace std::literals to access the s and sv literal suffixes). Using-declarations are okay in .cpp files, after the #include directives. Do not use using-statements in header files (especially in the global namespace of header files).
